@@ -1,0 +1,456 @@
+[debug] [2023-04-22T16:12:25.432Z] ----------------------------------------------------------------------
+[debug] [2023-04-22T16:12:25.434Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hasindu daninda\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-22T16:12:25.434Z] CLI Version:   11.28.0
+[debug] [2023-04-22T16:12:25.434Z] Platform:      win32
+[debug] [2023-04-22T16:12:25.435Z] Node Version:  v18.14.2
+[debug] [2023-04-22T16:12:25.435Z] Time:          Sat Apr 22 2023 21:42:25 GMT+0530 (India Standard Time)
+[debug] [2023-04-22T16:12:25.436Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-22T16:12:25.441Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-22T16:12:25.442Z] > authorizing via signed-in user (panduwawalan@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\degree\IPC\cw2\apicw2
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-22T16:12:48.439Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-22T16:12:49.224Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-22T16:12:49.225Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ipccw2-5409e (IpcCW2) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-04-22T16:12:52.371Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-04-22T16:12:52.371Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:12:54.032Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firebasedatabase.googleapis.com 200
+[debug] [2023-04-22T16:12:54.032Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-04-22T16:12:54.033Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/ipccw2-5409e/locations/-/instances/ipccw2-5409e-default-rtdb [none]
+[debug] [2023-04-22T16:12:54.773Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/ipccw2-5409e/locations/-/instances/ipccw2-5409e-default-rtdb 200
+[debug] [2023-04-22T16:12:54.773Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/ipccw2-5409e/locations/-/instances/ipccw2-5409e-default-rtdb {"name":"projects/221848359057/locations/us-central1/instances/ipccw2-5409e-default-rtdb","project":"projects/221848359057","databaseUrl":"https://ipccw2-5409e-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-04-22T16:13:17.574Z] >>> [apiv2][query] GET https://ipccw2-5409e-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-04-22T16:13:18.243Z] <<< [apiv2][status] GET https://ipccw2-5409e-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-04-22T16:13:18.243Z] <<< [apiv2][body] GET https://ipccw2-5409e-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for ipccw2-5409e-default-rtdb have been written to nibm_IPCCw2. 
+[info] Future modifications to nibm_IPCCw2 will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-04-22T16:13:18.248Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firestore.googleapis.com [none]
+[debug] [2023-04-22T16:13:18.248Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firestore.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:13:19.968Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firestore.googleapis.com 200
+[debug] [2023-04-22T16:13:19.968Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firestore.googleapis.com [omitted]
+[debug] [2023-04-22T16:13:19.968Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default) [none]
+[debug] [2023-04-22T16:13:21.402Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default) 200
+[debug] [2023-04-22T16:13:21.402Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default) {"name":"projects/ipccw2-5409e/databases/(default)","uid":"23c85326-d062-4524-ba1d-355f68c8a4d2","createTime":"2023-04-22T15:56:38.133009Z","updateTime":"2023-04-22T15:56:38.133009Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IMOr0uvwvf4CMNPe/rvwvf4C"}
+[debug] [2023-04-22T16:13:21.402Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-04-22T16:13:21.403Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-22T16:13:21.403Z] > authorizing via signed-in user (panduwawalan@gmail.com)
+[debug] [2023-04-22T16:13:21.403Z] [iam] checking project ipccw2-5409e for permissions ["firebase.projects.get"]
+[debug] [2023-04-22T16:13:21.403Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions [none]
+[debug] [2023-04-22T16:13:21.403Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:13:21.403Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-22T16:13:22.566Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions 200
+[debug] [2023-04-22T16:13:22.566Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-22T16:14:27.781Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/releases pageSize=10&pageToken=
+[debug] [2023-04-22T16:14:29.269Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/releases 200
+[debug] [2023-04-22T16:14:29.270Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/releases {"releases":[{"name":"projects/ipccw2-5409e/releases/cloud.firestore","rulesetName":"projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46","createTime":"2023-04-22T15:56:44.612466Z","updateTime":"2023-04-22T15:56:44.612466Z"}]}
+[debug] [2023-04-22T16:14:29.270Z] Found ruleset: projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46
+[debug] [2023-04-22T16:14:29.270Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46 [none]
+[debug] [2023-04-22T16:14:29.651Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46 200
+[debug] [2023-04-22T16:14:29.651Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-22T16:15:01.691Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-04-22T16:15:01.692Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-04-22T16:15:03.217Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-04-22T16:15:03.217Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-04-22T16:15:03.218Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-04-22T16:15:03.218Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/ipccw2-5409e/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-04-22T16:15:03.219Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-22T16:15:03.219Z] > authorizing via signed-in user (panduwawalan@gmail.com)
+[debug] [2023-04-22T16:15:03.219Z] [iam] checking project ipccw2-5409e for permissions ["firebase.projects.get"]
+[debug] [2023-04-22T16:15:03.220Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions [none]
+[debug] [2023-04-22T16:15:03.220Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:15:03.220Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-22T16:15:04.324Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions 200
+[debug] [2023-04-22T16:15:04.324Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-22T16:15:04.324Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-22T16:15:04.324Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:15:04.325Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-04-22T16:15:04.325Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:15:05.902Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-22T16:15:05.902Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-04-22T16:15:05.903Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-04-22T16:15:05.903Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:15:05.981Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/runtimeconfig.googleapis.com 200
+[debug] [2023-04-22T16:15:05.981Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-04-22T16:15:07.587Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-04-22T16:15:07.587Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-04-22T16:15:17.588Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-22T16:15:17.588Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:15:19.150Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-22T16:15:19.150Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-04-22T16:16:24.244Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-04-22T16:16:24.390Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-04-22T16:16:24.390Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.20.0","browserURL":"https://www.gstatic.com/firebasejs/9.20.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.20.0/firebase.tgz"},"live":{"version":"9.20","browserURL":"https://www.gstatic.com/firebasejs/live/9.20/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.20/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.20.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.20.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.20.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.20.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.20.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.20.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.20.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.20.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.20.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.20.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.memory.js"}}
+[debug] [2023-04-22T16:16:24.527Z] Error: ENOTDIR: not a directory, scandir 'C:\degree\IPC\cw2\apicw2\y'
+    at Object.readdirSync (node:fs:1451:3)
+    at Object.createFileSync (C:\Users\hasindu daninda\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\fs-extra\lib\ensure\file.js:55:10)
+    at Config.writeProjectFile (C:\Users\hasindu daninda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:152:12)
+    at C:\Users\hasindu daninda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:176:22
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async doSetup (C:\Users\hasindu daninda\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:144:9)
+    at async init (C:\Users\hasindu daninda\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-22T16:17:25.017Z] ----------------------------------------------------------------------
+[debug] [2023-04-22T16:17:25.019Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hasindu daninda\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-22T16:17:25.020Z] CLI Version:   11.28.0
+[debug] [2023-04-22T16:17:25.020Z] Platform:      win32
+[debug] [2023-04-22T16:17:25.020Z] Node Version:  v18.14.2
+[debug] [2023-04-22T16:17:25.021Z] Time:          Sat Apr 22 2023 21:47:25 GMT+0530 (India Standard Time)
+[debug] [2023-04-22T16:17:25.021Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-22T16:17:25.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-22T16:17:25.027Z] > authorizing via signed-in user (panduwawalan@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\degree\IPC\cw2\apicw2
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-22T16:17:37.070Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-04-22T16:17:38.160Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-04-22T16:17:38.160Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project ipccw2-5409e (IpcCW2) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-04-22T16:17:40.851Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-04-22T16:17:40.851Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:17:42.449Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firebasedatabase.googleapis.com 200
+[debug] [2023-04-22T16:17:42.450Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-04-22T16:17:42.451Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/ipccw2-5409e/locations/-/instances/ipccw2-5409e-default-rtdb [none]
+[debug] [2023-04-22T16:17:43.125Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/ipccw2-5409e/locations/-/instances/ipccw2-5409e-default-rtdb 200
+[debug] [2023-04-22T16:17:43.125Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/ipccw2-5409e/locations/-/instances/ipccw2-5409e-default-rtdb {"name":"projects/221848359057/locations/us-central1/instances/ipccw2-5409e-default-rtdb","project":"projects/221848359057","databaseUrl":"https://ipccw2-5409e-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-04-22T16:18:08.102Z] >>> [apiv2][query] GET https://ipccw2-5409e-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-04-22T16:18:08.789Z] <<< [apiv2][status] GET https://ipccw2-5409e-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-04-22T16:18:08.789Z] <<< [apiv2][body] GET https://ipccw2-5409e-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for ipccw2-5409e-default-rtdb have been written to nibm_IPCCw2. 
+[info] Future modifications to nibm_IPCCw2 will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-04-22T16:18:08.792Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firestore.googleapis.com [none]
+[debug] [2023-04-22T16:18:08.792Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firestore.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:18:10.407Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firestore.googleapis.com 200
+[debug] [2023-04-22T16:18:10.407Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/firestore.googleapis.com [omitted]
+[debug] [2023-04-22T16:18:10.407Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default) [none]
+[debug] [2023-04-22T16:18:11.893Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default) 200
+[debug] [2023-04-22T16:18:11.893Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default) {"name":"projects/ipccw2-5409e/databases/(default)","uid":"23c85326-d062-4524-ba1d-355f68c8a4d2","createTime":"2023-04-22T15:56:38.133009Z","updateTime":"2023-04-22T15:56:38.133009Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"II3flPbxvf4CMNPe/rvwvf4C"}
+[debug] [2023-04-22T16:18:11.893Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-04-22T16:18:11.893Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-22T16:18:11.893Z] > authorizing via signed-in user (panduwawalan@gmail.com)
+[debug] [2023-04-22T16:18:11.893Z] [iam] checking project ipccw2-5409e for permissions ["firebase.projects.get"]
+[debug] [2023-04-22T16:18:11.894Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions [none]
+[debug] [2023-04-22T16:18:11.894Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:18:11.894Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-22T16:18:12.999Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions 200
+[debug] [2023-04-22T16:18:13.000Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-22T16:18:42.820Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/releases pageSize=10&pageToken=
+[debug] [2023-04-22T16:18:44.294Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/releases 200
+[debug] [2023-04-22T16:18:44.294Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/releases {"releases":[{"name":"projects/ipccw2-5409e/releases/cloud.firestore","rulesetName":"projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46","createTime":"2023-04-22T15:56:44.612466Z","updateTime":"2023-04-22T15:56:44.612466Z"}]}
+[debug] [2023-04-22T16:18:44.294Z] Found ruleset: projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46
+[debug] [2023-04-22T16:18:44.295Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46 [none]
+[debug] [2023-04-22T16:18:45.725Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46 200
+[debug] [2023-04-22T16:18:45.725Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/ipccw2-5409e/rulesets/5f6ce8ff-2eef-4dbb-b560-36c18c69ed46 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-04-22T16:19:07.029Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-04-22T16:19:07.031Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-04-22T16:19:08.461Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-04-22T16:19:08.461Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/ipccw2-5409e/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2023-04-22T16:19:08.473Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-04-22T16:19:08.473Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/ipccw2-5409e/databases/(default)/collectionGroups/-/indexes {}
+[info] 
+=== Functions Setup
+[debug] [2023-04-22T16:19:08.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-22T16:19:08.475Z] > authorizing via signed-in user (panduwawalan@gmail.com)
+[debug] [2023-04-22T16:19:08.475Z] [iam] checking project ipccw2-5409e for permissions ["firebase.projects.get"]
+[debug] [2023-04-22T16:19:08.475Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions [none]
+[debug] [2023-04-22T16:19:08.475Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:19:08.475Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-22T16:19:09.647Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions 200
+[debug] [2023-04-22T16:19:09.647Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ipccw2-5409e:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-22T16:19:09.647Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-04-22T16:19:09.647Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:19:09.649Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-04-22T16:19:09.649Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/ipccw2-5409e
+[debug] [2023-04-22T16:19:11.169Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/runtimeconfig.googleapis.com 200
+[debug] [2023-04-22T16:19:11.169Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-04-22T16:19:11.209Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com 200
+[debug] [2023-04-22T16:19:11.209Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ipccw2-5409e/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[info] +  Wrote firebase/package.json 
+[info] +  Wrote firebase/.eslintrc.js 
+[info] +  Wrote firebase/index.js 
+[info] +  Wrote firebase/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-04-22T16:23:03.400Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-04-22T16:23:03.558Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-04-22T16:23:03.558Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.20.0","browserURL":"https://www.gstatic.com/firebasejs/9.20.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.20.0/firebase.tgz"},"live":{"version":"9.20","browserURL":"https://www.gstatic.com/firebasejs/live/9.20/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.20/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.20.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.20.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.20.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.20.0/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.20.0/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.20.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.20.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.20.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.20.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.20.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.20.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.20.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.20.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\degree\IPC\cw2\apicw2 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=665237011&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-04-22T16:23:04.268Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-04-22T16:23:04.268Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-04-22T16:23:04.737Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-04-22T16:23:04.737Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-04-22T16:23:04.741Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-04-22T16:23:05.348Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-04-22T16:23:05.348Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"NAnuradha15","id":98905552,"node_id":"U_kgDOBeUt0A","avatar_url":"https://avatars.githubusercontent.com/u/98905552?v=4","gravatar_id":"","url":"https://api.github.com/users/NAnuradha15","html_url":"https://github.com/NAnuradha15","followers_url":"https://api.github.com/users/NAnuradha15/followers","following_url":"https://api.github.com/users/NAnuradha15/following{/other_user}","gists_url":"https://api.github.com/users/NAnuradha15/gists{/gist_id}","starred_url":"https://api.github.com/users/NAnuradha15/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/NAnuradha15/subscriptions","organizations_url":"https://api.github.com/users/NAnuradha15/orgs","repos_url":"https://api.github.com/users/NAnuradha15/repos","events_url":"https://api.github.com/users/NAnuradha15/events{/privacy}","received_events_url":"https://api.github.com/users/NAnuradha15/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":3,"public_gists":0,"followers":0,"following":0,"created_at":"2022-02-02T17:13:15Z","updated_at":"2023-04-22T15:43:04Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":66,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as NAnuradha15 
+[info] 
+[debug] [2023-04-22T16:23:44.756Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:23:45.184Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 404
+[debug] [2023-04-22T16:23:45.184Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:23:51.269Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:23:51.697Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 404
+[debug] [2023-04-22T16:23:51.697Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:23:56.607Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:23:57.028Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2023-04-22T16:23:57.029Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:23:59.382Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:23:59.771Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2023-04-22T16:23:59.771Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:24:17.303Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:24:17.725Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2023-04-22T16:24:17.725Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:24:20.967Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:24:21.389Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2023-04-22T16:24:21.389Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:24:32.936Z] >>> [apiv2][query] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:24:33.360Z] <<< [apiv2][status] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key 404
+[debug] [2023-04-22T16:24:33.360Z] <<< [apiv2][body] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:24:34.151Z] >>> [apiv2][query] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:24:34.553Z] <<< [apiv2][status] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key 404
+[debug] [2023-04-22T16:24:34.553Z] <<< [apiv2][body] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:24:34.561Z] >>> [apiv2][query] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:24:34.961Z] <<< [apiv2][status] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key 404
+[debug] [2023-04-22T16:24:34.961Z] <<< [apiv2][body] GET https://api.github.com/repos/nilakshi/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:25:12.845Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:25:13.263Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 404
+[debug] [2023-04-22T16:25:13.263Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-04-22T16:25:39.298Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:25:39.705Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 401
+[debug] [2023-04-22T16:25:39.705Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:25:46.244Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:25:46.650Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 401
+[debug] [2023-04-22T16:25:46.650Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:25:46.956Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:25:47.115Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:25:47.386Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 401
+[debug] [2023-04-22T16:25:47.386Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:25:47.564Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2023-04-22T16:25:47.564Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:26:44.674Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:26:45.109Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 401
+[debug] [2023-04-22T16:26:45.109Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:26:56.871Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:26:57.299Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 401
+[debug] [2023-04-22T16:26:57.299Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:26:57.497Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:26:57.666Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:26:57.942Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 401
+[debug] [2023-04-22T16:26:57.942Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:26:58.094Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 401
+[debug] [2023-04-22T16:26:58.094Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:27:09.847Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:27:10.264Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 401
+[debug] [2023-04-22T16:27:10.264Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:27:40.368Z] >>> [apiv2][query] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:27:40.785Z] <<< [apiv2][status] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key 401
+[debug] [2023-04-22T16:27:40.785Z] <<< [apiv2][body] GET https://api.github.com/repos/NAnuradha15/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}
+[debug] [2023-04-22T16:28:04.189Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2023-04-22T16:28:04.607Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 401
+[debug] [2023-04-22T16:28:04.607Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Bad credentials","documentation_url":"https://docs.github.com/rest"}

@@ -58,7 +58,7 @@ const firebaseConfig = {
     res.send('Express API app running');
     });
 
-    api.post('/create', (req, res) => {
+    api.post('/recordTemp', (req, res) => {
         const sensorReading = req.query.temp || 0;
         const id = req.query.ID
         const data = {
@@ -73,7 +73,7 @@ const firebaseConfig = {
             Direction : direction,        
 
         }
-        addDataToCollection(database, "ipc-cw-02", data).then(
+        addDataToCollection(database, "nibm_IPCCw2", data).then(
             value => {res.send("Done");}
         ).catch(
             err => {
